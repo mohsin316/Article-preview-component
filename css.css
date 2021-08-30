@@ -134,7 +134,7 @@ strong{
 @media (min-width:871px){
     .container{
         display: flex;
-        max-width: 80%;
+        max-width: 70%;
     }
     .pic-container{
         max-height: 100%;
@@ -152,7 +152,8 @@ strong{
         margin-bottom: 1.5rem;
     }
     h1{
-        padding: 2.5rem 3rem 0rem 3rem;
+        font-size: 1.5rem;
+        padding: 2.5rem 4rem 0rem 3rem;
     }
     .profile{
         padding-inline: 3rem;
