@@ -26,7 +26,7 @@ body{
     padding: 7rem 2rem;
     font-family: var(--ff);
     line-height: 2rem;
-    position: relative;
+    
 }
 
 img{
@@ -37,10 +37,15 @@ img{
 
 .container{
     background-color: white;
-    border-radius: 15px;
-    overflow: hidden;
+    border-radius: 0 0 1rem 1rem;
     max-width: 780px;
-    position: relative;
+    
+}
+
+
+.pic-container{
+    border-radius: 1rem 1rem 0 0 ;
+    overflow: hidden;
 }
 
 h1{
@@ -71,6 +76,7 @@ h1{
     column-gap: 20px;
     padding-inline: 2rem;
     padding-bottom: 1rem;
+    position: relative;
 
 }
 
@@ -111,10 +117,12 @@ strong{
 .active{
     position: absolute;
     bottom: 0;
+    top: 0;
     padding: 1.5rem 2rem;
     display: flex;
     background-color: var(--Dgrayish-blue);
     width: 100%;
+    border-radius: 0 0 1rem 1rem;
 }
 .logo-holder{
     display: flex;
@@ -139,6 +147,8 @@ strong{
     .pic-container{
         max-height: 100%;
         flex: 1 1 40%;
+        border-radius: 1rem 0 0 1rem ;
+        overflow: hidden;
     }
     .pic-container img{
         height: 100%;
@@ -146,6 +156,7 @@ strong{
   
     .content-container{
         flex: 1 1 60%;
+        border-radius: 1rem 0 0 1rem ;
     }
     .content-container .desc{
         padding-inline: 3rem;
@@ -162,14 +173,15 @@ strong{
     .active{
         position: absolute;
         display: flex;
-        right: 1%;
-        bottom: 35%;
+        right: .5rem;
+        top: -4rem;
         background-color: var(--Dgrayish-blue);
         border-radius: 7px;
         width: 230px;
         height: 50px;
         box-shadow: 0px 0px 3px var(--grayish-blue);
         padding: 1rem 3rem;
+        z-index: 20;
         
     }
     .img-holder{
