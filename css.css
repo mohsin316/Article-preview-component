@@ -221,3 +221,9 @@ strong{
 .new-color{
     background-color: var(--grayish-blue);
 }
+
+@media (max-width:410px){
+    .active{
+        top: -10px;
+    }
+}
