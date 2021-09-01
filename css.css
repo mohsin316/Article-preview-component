@@ -101,7 +101,7 @@ strong{
     grid-area: btn;
     background-color: var(--Lgrayish-blue);
     border-radius: 50%;
-    z-index: 10;
+    z-index: 100;
 }
 
 .img-holder:hover{
@@ -117,18 +117,23 @@ strong{
 .active{
     position: absolute;
     bottom: 0;
-    top: 0;
     padding: 1.5rem 2rem;
     display: flex;
     background-color: var(--Dgrayish-blue);
     width: 100%;
     border-radius: 0 0 1rem 1rem;
+    transform-origin: bottom;
+    transition: transform 250ms ease-in-out;
+    transform: scale(1,0);
+    
 }
 .logo-holder{
     display: flex;
     justify-content: center;
     gap: 1rem;
     align-items: center;
+    transition: opacity 50ms ease-in;
+    opacity: 0;
 }
 
 .share{
@@ -137,6 +142,14 @@ strong{
     color: var(--grayish-blue);
 }
 
+.transition{
+    transform: scale(1,1);    
+}
+
+.transition-logos{
+    transition: opacity 250ms ease-in 150ms;
+    opacity: 1;
+}
 
 
 @media (min-width:871px){
@@ -183,6 +196,7 @@ strong{
         padding: 1rem 3rem;
         z-index: 20;
         
+        
     }
     .img-holder{
         position: relative;
@@ -198,14 +212,10 @@ strong{
         border: 15px solid transparent;
         border-top: 15px solid var(--Dgrayish-blue);
         border-bottom: 0;
+     
         }
     
 }
-
-.hidden{
-    display: none;
-}
-
 .new-color{
     background-color: var(--grayish-blue);
 }
