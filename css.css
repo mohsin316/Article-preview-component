@@ -21,8 +21,10 @@
 
 body{
     background-color: var(--Lgrayish-blue);
-    display: grid;
-    place-items: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
     padding: 7rem 2rem;
     font-family: var(--ff);
     line-height: 2rem;
